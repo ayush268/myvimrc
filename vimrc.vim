@@ -36,7 +36,7 @@ call vundle#end()
 
 filetype plugin indent on " required (added after Vundle stuff) 
 
-colorscheme diokai          " awesome color
+colorscheme molokai_dark    " awesome color
 syntax enable               " enable syntax processing
 
 set showmode                " show what mode we're currently editing in
@@ -67,6 +67,9 @@ set foldmethod=indent       " fold based on indent level (very useful for python
 set pastetoggle=<F2>        " paste mode, where you can paste mass data that won't be autoindented (press F2 in insert mode)
 set laststatus=2
 
+" Setting cursor where mouse button is clicked
+" set mouse=a
+
 " mapleader is now comma as using it is easy
 let mapleader=","
 
@@ -93,7 +96,9 @@ nnoremap <space> za
 " Remaping the <esc> key to jk
 inoremap jk <esc>
 
+" Allowing capitol W and Q
+nnoremap Q q
+nnoremap W w
+
 " toggle gundo (undo the thing which you want to from the undo tree)
 nnoremap <leader>u :GundoToggle<CR>
-
-
